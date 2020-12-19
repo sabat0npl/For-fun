@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./styles/contact.css " type="text/css"/>
+    <link rel="stylesheet" href="./styles/shared.css " type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sushi Bar - contact</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div id="site-logo">
+        <a href="./index.html">寿司</a>
+      </div>
+      <ul class="main-nav__links">
+        <li class="main-nav__link"><a href="./index.html">home</a></li>
+        <li class="main-nav__link"><a href="./menu.html">menu</a></li>
+        <li class="main-nav__link"><a href="./contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="main-header__text-container">
+        <h1 class="main-header__text">Najlepsze Sushi <br>w Twoim mieście!</h1>
+      </div>
+    </header>
+    <main>
+      <div class="contact-form__container">
+        <div class="contact-form__description">
+          <h2>Napisz do nas!</h2>
+          <p>Jeśli masz do nas jakieś pytania lub sugestie - zachęcamy do kontaktu z nami poprzez formularz dostępny na tej stronie.</p>
+          <p>Odpowiemy tak szybko jak to możliwe!</p>
+        </div>
+        <form action class="contact-form__form">
+          <div class="contact-form__name">
+            <label for="name">Twoje imię:</label>
+            <br>
+            <input type="text" id="name" placeholder="Imię" required>
+          </div>
+          <div class="contact-form__email">
+            <label for="email">Twój e-mail:</label>
+            <br>
+            <input type="text" id="email" placeholder="e-mail" required>
+          </div>
+          <div class="contact-form__message">
+            <label for="message">Wiadomość:</label>
+            <br>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Tu wpisz swoją wiadomość" required></textarea>
+            <br>
+            <input type="submit" value="Wyślij">
+          </div>
+        </form>
+      </div>
+    </main>
+    <aside>
+      <ul>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </aside>
+    <footer>
+      <div class="main-footer__text">
+        <p>Zapraszamy!</p>
+      </div>
+      <div class="main-footer__copyright">
+        <p>Zbigniew Holak &copy; CodersCamp 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

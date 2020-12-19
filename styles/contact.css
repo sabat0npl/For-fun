@@ -1,0 +1,82 @@
+main {
+  width: 100%;
+  min-height: 50vh;
+}
+
+.contact-form__container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact-form__description h2{
+  display: inline-block;
+  margin: var(--header-margin-def);
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.contact-form__description p{
+  margin: var(--header-margin-def);
+}
+
+.contact-form__form {
+  margin: var(--header-margin-def);
+  min-height: 25rem;
+}
+
+/* Media query */
+@media (min-width: 992px) {
+  main {
+    min-height: 40vh;
+  }
+  .contact-form__container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact-form__description,
+  .contact-form__form {
+    width: 50%;
+  }
+
+  .contact-form__description * {
+    text-align: justify;
+  }
+}
+
+/* Input styles */
+.contact-form__name label,
+.contact-form__email label,
+.contact-form__message label {
+  display: inline-block;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  margin: var(--header-margin-def);
+}
+
+.contact-form__name input,
+.contact-form__email input,
+.contact-form__message textarea,
+.contact-form__message input {
+  border: 1px solid var(--secondary-text-color);
+  border-radius: .3rem;
+}
+
+.contact-form__name input,
+.contact-form__email input {
+  line-height: 1.3rem;
+  width: 60%;
+  max-width: 15rem;
+}
+
+.contact-form__message input {
+  line-height: 1.3rem;
+  width: 5rem;
+}
+
+.contact-form__name input[placeholder],
+.contact-form__email input[placeholder],
+.contact-form__message textarea[placeholder] {
+  padding-left: .5rem;
+}
